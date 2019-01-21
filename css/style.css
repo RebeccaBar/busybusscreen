@@ -1,0 +1,102 @@
+*,* :before, *:after {
+ box-sizing: border-box;
+}
+
+body {
+	line-height: 1.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 2;
+}
+
+.header-row {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+body {
+  background-color: #333;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 5;
+  width: 420px;
+}
+
+nav {
+  margin: 0 auto;
+  padding: 10px 0 0px 10px;
+  position: fixed;
+  width: 420px;
+  background-color: black;
+}
+
+.restaurant-list {
+  padding-top: 70px;
+  background-color: #E0DFE0;
+  width: 100%;
+}
+
+.row {
+  border-bottom: 1px solid black;
+  clear: both;
+  height: 60px;
+  padding: 10px;
+}
+
+.row:hover {
+   background-color: #656565;
+}
+
+.column-narrow {
+  float: left;
+  width: 13%;
+}
+
+.column-wide {
+  float: left;
+  width: 28%;
+}
+
+.column-wider {
+  float: left;
+  width: 60%;
+}
+
+.column-medium {
+  float: left;
+  width: 17%;
+}
+
+.arrow {
+  width: 8%;
+  float: right;
+  padding-top: 3px;
+}
+
+.right-icon {
+  width: 10%;
+  float: right;
+  margin-top: -1px;
+}
