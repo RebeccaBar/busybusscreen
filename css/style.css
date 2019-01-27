@@ -4,99 +4,105 @@
 
 body {
 	line-height: 1.2;
+  background-color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  font-size: 16px;
 }
+
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+h1 {
+  font-size: 17px;
+  font-weight: bold;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+h2 {
+  font-size: 17px;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 2;
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 13px;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 15px;
+  background: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.5px 0 rgba(0,0,0,0.3);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 420px;
+  background: white;
+  height: 700px;
+  overflow: auto;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.icon {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list .icon {
+  height: 22px;
+  width: 22px;
+  margin-left: 10px;
 }
 
 .header-row {
   color: white;
   font-size: 18px;
   font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   padding-top: 5px;
   padding-left: 30px;
 }
 
-h1 {
-  font-weight: bold;
-}
-
-body {
-  background-color: #333;
-  font-family: sans-serif;
-  font-size: 16px;
-}
-
-.container {
-  margin: 5;
-  width: 420px;
-}
-
-nav {
-  margin: 0 auto;
-  padding: 10px 0 0px 10px;
-  position: fixed;
-  width: 420px;
-  background-color: black;
-}
-
-.restaurant-list {
-  padding-top: 70px;
-  background-color: #E0DFE0;
-  width: 100%;
-}
-
 .row {
-  border-bottom: 1px solid black;
-  clear: both;
-  height: 60px;
-  padding: 10px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #BCBBC1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .row:hover {
-   background-color: #656565;
+   background-color: #b1d1fd;
+   cursor: pointer;
 }
 
-.column-narrow {
-  float: left;
-  width: 13%;
+.column-right, .column-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.column-wide {
-  float: left;
-  width: 28%;
+.column-left > .text:first-of-type {
+    width: 45px;
 }
 
-.column-wider {
-  float: left;
-  width: 60%;
-}
-
-.column-medium {
-  float: left;
-  width: 17%;
-}
-
-.arrow {
-  width: 8%;
-  float: right;
-  padding-top: 3px;
-}
-
-.right-icon {
-  width: 10%;
-  float: right;
-  margin-top: -1px;
+.column-right > .text {
+    text-align: right;
 }
