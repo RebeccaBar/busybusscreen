@@ -40,6 +40,12 @@ nav {
   box-shadow: 0 0.5px 0 rgba(0,0,0,0.3);
 }
 
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
