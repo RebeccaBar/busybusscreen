@@ -51,8 +51,18 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  box-shadow: 0 0.5px 0 rgba(0,0,0,0.3);f
+  justify-content: space-between;
+  box-shadow: 0 0.5px 0 rgba(0,0,0,0.3);
+}
+
+.bottom-nav .icon {
+  flex-grow: 1;
+}
+
+.icon-set {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -69,8 +79,8 @@ img {
 }
 
 .icon {
-  height: 28px;
-  width: 28px;
+  max-height: 28px;
+  max-width: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
